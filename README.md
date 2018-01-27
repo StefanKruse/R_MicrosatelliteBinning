@@ -1,7 +1,7 @@
 # R Microsatellite Binning
 Functions to process scored microsatellite track data exported from Geneious.
 
-Individual steps after preparing the samples in Geneious (check ladder peaks and score alleles in Geneious/microsatellite plugin; export all files from Geneious to one file for each multiplex):
+Individual steps after preparing the samples in Geneious (check ladder peaks and score alleles in Geneious/microsatellite plugin; export all files from Geneious to one file for each multiplex; extract the individual multiplex files):
 1. read scored Geneious-XML-files and transform to data frame
 2. read processed geneious data frame and determine fragment lengths
 3. read raw fragment lengths and separate into individual microsatellite loci
@@ -9,7 +9,7 @@ Individual steps after preparing the samples in Geneious (check ladder peaks and
 5. add additional information (original individual TreeID and SiteID)
 6. binning fragment length into integers
 7. import the binned data and convert to genind-object and run first example analyses
-Further details on each step can be found in the R-script
+Expample data is provided and further details on each step can be found in the R-script.
 
 Currently supported:
 - size ladder LIZ600
